@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:layout_margin="40dp"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:textColorHint="@color/white"
+        android:drawableTint="@color/white"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:hint="@string/username"
+        android:background="#30ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:textColorHint="@color/white"
+        android:drawableTint="@color/white"
+        android:textColor="@color/white"
+        android:password="true"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:hint="@string/password"
+        android:background="#30ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signinbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:text="sign in"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signinbtn"
+        android:text="Created by Victor"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
